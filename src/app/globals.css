@@ -3,4 +3,9 @@
 @theme inline {
   --color-primary: #4e1703;
   --color-secundary: #cd3b13;
+  --color-white-500: #f3f4f6;
+}
+
+body {
+  background-color: #fafafa;
 }
