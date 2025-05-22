@@ -5,6 +5,7 @@ import {
   ScaleIcon,
   ViewColumnsIcon,
 } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 export function Navbar() {
   return (
@@ -19,12 +20,18 @@ export function Navbar() {
         </a>
 
         <div className="flex gap-2.5">
-          <Button className="hover:bg-white-500 cursor-pointer rounded-md border-1 border-gray-400 px-1.5 py-1.5">
+          <Link
+            href="/planning-poker"
+            className="hover:bg-white-500 cursor-pointer rounded-md border-1 border-gray-400 px-1.5 py-1.5"
+          >
             <ScaleIcon className="h-4 w-4" />
-          </Button>
-          <Button className="hover:bg-white-500 cursor-pointer rounded-md border-1 border-gray-400 px-1.5 py-1.5">
+          </Link>
+          <Link
+            href="/retro-board"
+            className="hover:bg-white-500 cursor-pointer rounded-md border-1 border-gray-400 px-1.5 py-1.5"
+          >
             <ViewColumnsIcon className="h-4 w-4" />
-          </Button>
+          </Link>
           <Button className="hover:bg-white-500 cursor-pointer rounded-md border-1 border-gray-400 px-1.5 py-1.5">
             <ClockIcon className="h-4 w-4" />
           </Button>
